@@ -1,0 +1,131 @@
+@import url("styles.css");
+
+h1 {
+  margin-left: 550px;
+}
+
+/* Fruits category page styles */
+.products-category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+  
+  /* Update the width of product cards to create 3 cards in a row */
+  .product-card {
+    flex-basis: calc(33.33% - 20px); /* Adjusted width to create 3 columns with some space between them */
+    margin-bottom: 20px;
+  }
+  
+  /* Add styles for product cards */
+  .product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    max-width: 300px; /* Add a maximum width to prevent cards from taking too much space */
+  }
+  
+  .product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .product-title {
+    font-weight: bold;
+  }
+  
+  .product-price {
+    color: green;
+    font-weight: bold;
+  }
+  
+  /* Style the cart and buy now buttons */
+  .cart-button,
+  .buy-now-button {
+    background-color: green;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 30px; /* Set the border-radius to create an oval shape */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+    margin-top: 10px;
+  }
+  
+  
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    flex-basis: calc(33.33% - 20px);
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+  }
+  
+  .product-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .product-card h3 {
+    margin: 5px 0;
+  }
+  
+  .product-card p.price {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .quantity-btn {
+    width: 30px;
+    height: 30px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .quantity-input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 0 5px;
+  }
+  
+  .add-to-cart-btn,
+  .buy-now-btn {
+    width: 120px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    background-color: green;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 30px; /* Set the border-radius to create an oval shape */
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .add-to-cart-btn {
+    margin-right: 10px; /* Add space between "Add to Cart" and "Buy Now" buttons */
+  }
+  
+  .add-to-cart-btn:hover,
+  .buy-now-btn:hover {
+    background-color: #218838;
+  }

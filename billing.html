@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Billing</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <nav class="navigation">
+    <div class="container">
+      <a href="index.html" class="logo">Super Market</a>
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button type="submit">Search</button>
+      </div>
+      <a href="billing.html" class="cart-button">Cart</a>
+    </div>
+  </nav>
+
+  <aside class="sidebar">
+    <ul>
+      <li><a href="Fruits/fruits.html">Fruits</a></li>
+      <li><a href="Vegetables/vegetables.html">Vegetables</a></li>
+      <li><a href="Bakery/bakery.html">Bakery</a></li>
+      <li><a href="Grocery/grocery.html">Grocery</a></li>
+      <li><a href="SkinAndHair/Skinandhair.html">Skin & Hair Care</a></li>
+    </ul>
+  </aside>
+
+  <div class="main-content">
+    <div class="billing-container">
+      <!-- Product details will be dynamically added by JavaScript -->
+    </div>
+
+    <div class="payment-options">
+      <h2>Select Payment Option</h2>
+      <label>
+        <input type="radio" name="payment" value="credit-card">
+        Credit Card
+      </label>
+      <label>
+        <input type="radio" name="payment" value="paypal">
+        PayPal
+      </label>
+      <!-- Add more payment options as needed -->
+    </div>
+
+    <div class="total-bill">
+      <h3>Total Bill Amount: $<span id="total-amount">0.00</span></h3>
+      <button class="pay-button" onclick="payNow()">Pay Now</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,563 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+/* ... (existing styles) ... */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+h1 {
+    margin-left: 450px;
+}
+
+p {
+    margin-left: 100px;
+}
+
+h1, h2, h3, p {
+  color: #09591a;
+}
+
+/* h2 {
+    margin-left: 100px;
+    margin-right: 800px;
+} */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+  
+/* Navigation bar styles */
+.navigation {
+    background-color: green;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure the navigation bar stays on top of other content */
+  }
+  
+/* Search bar in oval shape styles */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+  
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 30px; /* Set the border-radius to create an oval shape */
+    background-color: #f2f2f2;
+    outline: none;
+}
+  
+.search-bar button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 30px; /* Match the input element's border-radius */
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}  
+
+.buy-button {
+    background-color: white;
+    color: green;
+    padding: 8px 16px;
+    border: 2px solid green;
+    border-radius: 5px;
+    text-decoration: none;
+}
+  
+/* .sidebar {
+    width: 200px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    position: fixed;
+    top: 60px; 
+    bottom: 0;
+    left: 0;
+} */
+
+/* Sidebar styles */
+.sidebar {
+    width: 200px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .sidebar ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+  }
+  
+  .sidebar a:hover {
+    background-color: #e5e5e5;
+  }
+  
+  
+  /* Adjust the main content's padding to create space for the sidebar */
+.main-content {
+    padding-top: 20px; /* Set this value to match the height of the navigation bar */
+    padding-left: 220px; /* Set this value to match the width of the sidebar */
+    /* width: max-content; */
+    /* width: 100%; */
+}
+  
+
+/* ... (existing styles) ... */
+
+/* Fruits category page styles */
+.fruits-category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 150px;
+  }
+  
+  .product-card {
+    flex-basis: calc(33.33% - 20px); /* Adjusted width to create 3 columns with some space between them */
+    margin-bottom: 20px;
+  }
+  
+  /* ... (existing styles) ... */
+  
+/* Add styles for product cards */
+/* .product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  } */
+  
+  .product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .product-title {
+    font-weight: bold;
+  }
+  
+  .product-price {
+    color: green;
+    font-weight: bold;
+  }
+  
+  /* Style the cart and buy now buttons */
+
+  /* Cart button styles */
+.cart-button {
+    background-color: green;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 30px; /* Set the border-radius to create an oval shape */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+    margin-left: 10px; /* Add some space between the logo and the cart button */
+  }
+  
+  .cart-button:hover {
+    background-color: #218838; /* Darker green color on hover */
+  }
+
+  
+  .cart-button,
+  .buy-now-button {
+    background-color: green;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .cart-button:hover,
+  .buy-now-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Style the billing page */
+  .billing-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .billing-product {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .billing-product-info {
+    flex-grow: 1;
+  }
+  
+  .billing-product-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  .billing-product-title {
+    font-weight: bold;
+  }
+  
+  .billing-product-price {
+    color: green;
+  }
+  
+  .billing-total {
+    text-align: right;
+    margin-top: 10px;
+  }
+
+
+.fruits-category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 150px;
+  }
+  
+  .product-card {
+    flex-basis: calc(33.33% - 20px); /* Adjusted width to create 3 columns with some space between them */
+    margin-bottom: 20px;
+  }
+  
+  
+/* Styles for the banner */
+.banner {
+    margin: 20px 0;
+  }
+  
+  .banner img {
+    width: 100%;
+  }
+  
+  /* Styles for the featured products section */
+  .featured-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .product-card {
+    flex-basis: calc(33.33% - 20px);
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  .product-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .product-card h3 {
+    font-weight: bold;
+  }
+  
+  .product-card p.price {
+    color: green;
+    font-weight: bold;
+  }
+  
+  /* Styles for the "Add to Cart" and "Buy Now" buttons */
+  .add-to-cart-btn,
+  .buy-now-btn {
+    background-color: green;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .add-to-cart-btn:hover,
+  .buy-now-btn:hover {
+    background-color: #218838;
+  }
+  
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+  
+/* Navigation bar styles */
+.navigation {
+    background-color: green;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure the navigation bar stays on top of other content */
+  }
+  
+/* Search bar in oval shape styles */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+  
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 30px; /* Set the border-radius to create an oval shape */
+    background-color: #f2f2f2;
+    outline: none;
+}
+  
+.search-bar button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 30px; /* Match the input element's border-radius */
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}  
+
+.buy-button {
+    background-color: white;
+    color: green;
+    padding: 8px 16px;
+    border: 2px solid green;
+    border-radius: 5px;
+    text-decoration: none;
+}
+  
+/* .sidebar {
+    width: 200px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    position: fixed;
+    top: 60px; 
+    bottom: 0;
+    left: 0;
+} */
+
+/* Sidebar styles */
+.sidebar {
+    width: 200px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .sidebar ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+  }
+  
+  .sidebar a:hover {
+    background-color: #e5e5e5;
+  }
+  
+  
+  /* Adjust the main content's padding to create space for the sidebar */
+.main-content {
+    padding-top: 70px; /* Set this value to match the height of the navigation bar */
+    padding-left: 220px; /* Set this value to match the width of the sidebar */
+}
+  
+
+/* ... (existing styles) ... */
+
+/* Fruits category page styles */
+.fruits-category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 150px;
+  }
+  
+  .product-card {
+    flex-basis: calc(33.33% - 20px); /* Adjusted width to create 3 columns with some space between them */
+    margin-bottom: 20px;
+  }
+  
+  /* ... (existing styles) ... */
+  
+/* Add styles for product cards */
+/* .product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  } */
+  
+  .product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .product-title {
+    font-weight: bold;
+  }
+  
+  .product-price {
+    color: green;
+    font-weight: bold;
+  }
+  
+  /* Style the cart and buy now buttons */
+
+  /* Cart button styles */
+.cart-button {
+    background-color: green;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 30px; /* Set the border-radius to create an oval shape */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+    margin-left: 10px; /* Add some space between the logo and the cart button */
+  }
+  
+  .cart-button:hover {
+    background-color: #218838; /* Darker green color on hover */
+  }
+
+  
+  .cart-button,
+  .buy-now-button {
+    background-color: green;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .cart-button:hover,
+  .buy-now-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Style the billing page */
+  .billing-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .billing-product {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .billing-product-info {
+    flex-grow: 1;
+  }
+  
+  .billing-product-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  .billing-product-title {
+    font-weight: bold;
+  }
+  
+  .billing-product-price {
+    color: green;
+  }
+  
+  .billing-total {
+    text-align: right;
+    margin-top: 10px;
+  }
+
+
+.fruits-category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 150px;
+  }
+  
+  .product-card {
+    flex-basis: calc(33.33% - 20px); /* Adjusted width to create 3 columns with some space between them */
+    margin-bottom: 20px;
+  }
+  
+  
